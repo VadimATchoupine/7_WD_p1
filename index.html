@@ -57,7 +57,7 @@
                 </div>
                 
                 <!-- LOGO -->
-                <div class="col-12 col-sm-3 align-self-center">
+                <div class="col-12 col-sm-3 text-center align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 
@@ -65,8 +65,12 @@
                 <div class="col-12 col-sm-3 align-self-center">    
                     <!-- 1st way to do it - with A tag and CSS properties -->
                     <!-- <button type="button" class="btn btn-block btn-sm btn-warning"><a class="customBtn" href="#reserveF">Reserve Table</a></button>  -->
+                    
                     <!-- 2nd way to do it - with JS -->
-                    <input type="button" class="btn btn-block btn-sm btn-warning" onClick="document.getElementById('reserveF').scrollIntoView();" value="Reserve Table"/>
+                    <!-- <input type="button" class="btn btn-block btn-sm btn-warning" onClick="document.getElementById('reserveF').scrollIntoView();" value="Reserve Table"/> -->
+                    
+                    <!-- 3rd way to do it - with A tag only -->
+                    <a href="#reserveF" class="btn btn-block btn-warning btn-sm">Reserve Table</a>
                 </div>
 
             </div>
@@ -87,7 +91,7 @@
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail" src="img/uthappizza.png" alt="uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-o">Uthappizza<span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>    
@@ -105,10 +109,11 @@
             <div class="col col-sm order-sm-last col-md">
                 <div class="media">
                     <div class="media-body">
-                        <h2 class="mt-o">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                        <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                    <img class="d-flex mr-3 img-thumbnail" src="img/buffet.png" alf="buffet">           
+                    <img class="d-flex mr-3 img-thumbnail" src="img/buffet.png" alf="buffet">
+                    <!-- <img src="img/buffet.png" class="ml-3 rounded"> -->
                 </div>                
             </div>
 
@@ -136,7 +141,7 @@
      
         <!-- CARD with RESERVATION FORM - start -->
         <div class="row row-content">
-            <div class="col-sm align-self-center">
+            <div class="col-12 col-sm-8 offset-sm-2 align-self-center">
                 <div class="card">
                     <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                     <div class="card-body">
@@ -145,9 +150,9 @@
                             <!-- 1 element - numberOfGuests -->
                             <div class="form-group row">
                                 <!-- 1.1. label -->
-                                <label for="numberguests" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+                                <label for="numberguests" class="col-12 col-md-4 col-form-label">Number of Guests</label>
                                 <!-- 1.2. input / snippet from official documentation-->
-                                <div class="col align-self-center">
+                                <div class="col col-md align-self-center">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                         <label class="form-check-label" for="inlineRadio1">1</label>
@@ -177,13 +182,13 @@
                             <!-- 2 element - dataAndTime -->
                             <div class="form-group row">
                                 <!-- 2.1. label -->
-                                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <label for="dateandtime" class="col-12 col-md-4 col-form-label">Date and Time</label>
                                 <!-- 2.2.1. input - DATE -->
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-4">
                                     <input class="form-control" type="date" name="date" id="date" placeholder="Date">
                                 </div>
                                 <!-- 2.2.2. input - TIME -->
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-4">
                                     <input class="form-control" type="datetime" name="time" id="time" placeholder="Time">
                                 </div>
                             </div>
