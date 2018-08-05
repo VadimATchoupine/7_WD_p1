@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
     <!-- Required meta tags always come first -->
@@ -20,9 +18,8 @@
 
 </head>
 
-
-
 <body>
+
 
     <!-- navigation bar - start -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -49,18 +46,29 @@
     </nav>
     <!-- navigation bar - end -->
 
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
+                
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <!-- LOGO - start -->
-                <div class="col-12 col-sm align-self-center">
+                
+                <!-- LOGO -->
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <!-- LOGO - end -->
+                
+                <!-- CTA -->
+                <div class="col-12 col-sm-3 align-self-center">    
+                    <!-- 1st way to do it - with A tag and CSS properties -->
+                    <!-- <button type="button" class="btn btn-block btn-sm btn-warning"><a class="customBtn" href="#reserveF">Reserve Table</a></button>  -->
+                    <!-- 2nd way to do it - with JS -->
+                    <input type="button" class="btn btn-block btn-sm btn-warning" onClick="document.getElementById('reserveF').scrollIntoView();" value="Reserve Table"/>
+                </div>
+
             </div>
         </div>
     </header>
@@ -68,52 +76,131 @@
 
     <div class="container">
         
-        <div class="row row-content">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3 align-items-center">
+        <!-- CONTENT ROW 1 -->
+        <div class="row row-content align-items-center">
+            
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-            </div>
-        </div>
-
-        <div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
-                <div class="media-body">
-                    <h2 class="mt-o">Uthappizza<span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                    <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                </div>
-            </div>    
-        </div>
-    
-        <div class="row row-content">
-            <div class="col-12 col-sm-4 col-md-3 align-items-center">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
-        </div>
-
-        <div class="row row-content"> 
-            <div class="col-12 col-sm-4 order-sm-last col-md-3 align-items-center">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
+            
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/uthappizza.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-o">Uthappizza<span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>    
+            </div>
+
+        </div>
+
+        <!-- CONTENT ROW 2 -->
+        <div class="row row-content align-items-center">
+            
+            <div class="col-12 col-sm-4 order-sm-first col-md-3">
+                <h3>This Month's Promotions</h3>
+            </div>
+            
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-o">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail" src="img/buffet.png" alf="buffet">           
+                </div>                
+            </div>
+
+        </div>
+
+        <!-- CONTENT ROW 3 -->
+        <div class="row row-content align-items-center"> 
+            
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Meet our Culinary Specialists</h3>
+            </div>
+            
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/alberto.png" alt="alberto">
                         <div class="media-body">
                             <h2 class="mt-0">Alberto Somayya</h2>
                             <h4>Executive Chef</h4>
                             <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                         </div>
                 </div>
-            </div>    
-        </div>    
-    
+            </div>
+
+        </div>            
+     
+        <!-- CARD with RESERVATION FORM - start -->
+        <div class="row row-content">
+            <div class="col-sm align-self-center">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <!-- RESERVATION FORM - start -->
+                        <form id="reserveF">
+                            <!-- 1 element - numberOfGuests -->
+                            <div class="form-group row">
+                                <!-- 1.1. label -->
+                                <label for="numberguests" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+                                <!-- 1.2. input / snippet from official documentation-->
+                                <div class="col align-self-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                        <label class="form-check-label" for="inlineRadio5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                        <label class="form-check-label" for="inlineRadio6">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 element - dataAndTime -->
+                            <div class="form-group row">
+                                <!-- 2.1. label -->
+                                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <!-- 2.2.1. input - DATE -->
+                                <div class="col-12 col-md-3">
+                                    <input class="form-control" type="date" name="date" id="date" placeholder="Date">
+                                </div>
+                                <!-- 2.2.2. input - TIME -->
+                                <div class="col-12 col-md-3">
+                                    <input class="form-control" type="datetime" name="time" id="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <!-- 3 element - reservButton -->
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary ">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- RESERVATION FORM - end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD with RESERVATION FORM - end -->
+
     </div>
 
     <footer class="footer">

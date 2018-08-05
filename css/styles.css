@@ -31,3 +31,14 @@ body {
 .navbar-dark {
     background: dodgerblue;
 }
+.customBtn {
+    color: black;
+    text-decoration: none;
+}
+.customBtn:link { text-decoration: none; } 
+.customBtn:visited { text-decoration: none; }
+.customBtn:active { text-decoration: none; }
+.customBtn:hover {
+    color: black;
+    text-decoration: none;
+}
