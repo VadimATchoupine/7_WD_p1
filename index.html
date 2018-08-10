@@ -21,7 +21,7 @@
 <body>
 
 
-    <!-- navigation bar - start -->
+    <!-- NAVIGATION BAR - start -->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
 
@@ -40,12 +40,83 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <!-- LOGIN button / modal - start -->
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"> Login</span></a>
+                </span>
+                <!-- LOGIN button / modal - end -->
+
             </div>
             
         </div>
     </nav>
-    <!-- navigation bar - end -->
+    <!-- NAVIGATION BAR - end -->
 
+    <!-- MODAL WINDOW - start -->
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- MODAL CONTENT -->
+            <div class="modal-content">
+                <!-- 1. modal-header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Login</h4>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+
+                </div>
+                <!-- 2. modal-body -->
+                <div class="modal-body">
+                    
+                    <!-- login form -->
+                    <form>
+                        <!-- 1st row -->
+                        <div class="form-row">
+                            <!-- 1.1. Email -->
+                            <div class="form-group col-sm-4">
+
+                                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                <input  class="form-control form-control-sm mr-1"
+                                        type="email"
+                                        id="exampleInputEmail3"
+                                        placeholder="Enter email">
+
+                            </div>
+                            <!-- 1.2. Password -->
+                            <div class="form-group col-sm-2">
+                                
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input  class="form-control form-control-sm mr-1"
+                                        type="password"
+                                        id="exampleInputPassword3"
+                                        placeholder="Enter password">
+
+                            </div>
+                            <!-- 1.3. Remember me -->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 2nd row -->
+                        <div class="form-row">
+                            <!-- 2.1. Button - cancel -->
+                            <button class="btn btn-secondary btn-sm ml-auto" type="button" data-dismiss="modal">Cancel</button>
+                            <!-- 2.2. Button - sign in -->
+                            <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL WINDOW - end -->
 
     <header class="jumbotron">
         <div class="container">
@@ -61,16 +132,15 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 
-                <!-- CTA -->
+                <!-- CTA w/ tooltip -->
                 <div class="col-12 col-sm-3 align-self-center">    
-                    <!-- 1st way to do it - with A tag and CSS properties -->
-                    <!-- <button type="button" class="btn btn-block btn-sm btn-warning"><a class="customBtn" href="#reserveF">Reserve Table</a></button>  -->
-                    
-                    <!-- 2nd way to do it - with JS -->
-                    <!-- <input type="button" class="btn btn-block btn-sm btn-warning" onClick="document.getElementById('reserveF').scrollIntoView();" value="Reserve Table"/> -->
-                    
-                    <!-- 3rd way to do it - with A tag only -->
-                    <a href="#reserveF" class="btn btn-block btn-warning btn-sm">Reserve Table</a>
+                    <a  class="btn btn-block btn-warning btn-sm nav-link"
+                        role="button"
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        data-html="true"
+                        title="Or Call Us at <br><strong>+852 12345678</strong>"
+                        href="#reserveF"> Reserve Table </a>
                 </div>
 
             </div>
@@ -254,6 +324,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- JS/jQuery code for tooltip -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
 </body>
 
