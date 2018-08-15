@@ -1,0 +1,72 @@
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+.row-header {
+    margin: 0px auto;
+    padding: 0px;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+.footer {
+    background-color: #4A89DC;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px 70px 30px;
+    background: #4A89DC;
+    color: floralwhite;
+}
+.address {
+    margin: 0px;
+    font-size: 80%;
+    color: #0f0f0f;
+}
+.navbar-dark {
+    background: dodgerblue;
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel {
+    background: dodgerblue;
+}
+.carousel-item {
+    height: 300px;
+}
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+#carouselButton {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+/* TEMP - start */
+.customBtn {
+    color: black;
+    text-decoration: none;
+}
+.customBtn:link { text-decoration: none; } 
+.customBtn:visited { text-decoration: none; }
+.customBtn:active { text-decoration: none; }
+.customBtn:hover {
+    color: black;
+    text-decoration: none;
+}
+/* TEMP - end */
