@@ -76,3 +76,15 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+.modal {
+    
+    .modal-header {
+        color: floralwhite;
+        background: $background-dark;
+        button { color: $background-pale; }
+    }
+    
+    .modal-body { background: $background-pale; }
+
+}
